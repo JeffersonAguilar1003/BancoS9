@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:text="Bienvenido al banco"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_VerSaldo"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:text="tu saldo se mostrara aqui"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <EditText
+        android:id="@+id/etn_Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ingresar dinero"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/etn_Retirar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <RadioGroup
+        android:layout_width="211dp"
+        android:layout_height="159dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="127dp">
+
+        <RadioButton
+            android:id="@+id/rb_Ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="accion"
+            android:text="Ingresar Dinero" />
+
+        <RadioButton
+            android:id="@+id/rb_Retirar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="accion"
+            android:text="Retirar dinero" />
+
+        <RadioButton
+            android:id="@+id/rb_Salir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="accion"
+            android:text="Salir" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_VerSaldo"
+        android:layout_width="135dp"
+        android:layout_height="56dp"
+        android:onClick="accion"
+        android:text="Ver saldo"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="procesar"
+        android:text="Ok"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="358dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
